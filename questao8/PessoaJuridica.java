@@ -6,9 +6,9 @@ public class PessoaJuridica extends Cliente {
     private String inscricaoEstadual;
     private String ramoAtividade;
 
-    public PessoaJuridica(String dataCadastro, String email, String endereco, Long id, String nome,
-                          String telefone, String cnpj, String inscricaoEstadual, String nomeFantasia, String ramoAtividade) {
-        super(dataCadastro, email, endereco, id, nome, telefone);
+    public PessoaJuridica(String email, String endereco, String nome, String telefone,
+                          String cnpj, String inscricaoEstadual, String nomeFantasia, String ramoAtividade) {
+        super(email, endereco, nome, telefone);
         this.cnpj = cnpj;
         this.inscricaoEstadual = inscricaoEstadual;
         this.nomeFantasia = nomeFantasia;

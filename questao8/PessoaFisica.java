@@ -9,9 +9,9 @@ public class PessoaFisica extends Cliente {
     private String genero;
     private String rg;
 
-    public PessoaFisica(String dataCadastro, String email, String endereco, Long id, String nome, String telefone,
+    public PessoaFisica(String email, String endereco, String nome, String telefone,
                         String cpf, LocalDate dataNascimento, String genero, String nomeSocial, String rg) {
-        super(dataCadastro, email, endereco, id, nome, telefone);
+        super(email, endereco, nome, telefone);
         this.cpf = cpf;
         this.dataNascimento = dataNascimento;
         this.genero = genero;

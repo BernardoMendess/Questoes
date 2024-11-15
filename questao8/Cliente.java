@@ -1,23 +1,23 @@
 package questao8;
 
+import java.time.LocalDate;
+
 public class Cliente {
-    private Long id;
     private String nome;
-    private String dataCadastro;
+    private LocalDate dataCadastro;
     private String email;
     private String telefone;
     private String endereco;
 
-    public Cliente(String dataCadastro, String email, String endereco, Long id, String nome, String telefone) {
-        this.dataCadastro = dataCadastro;
+    public Cliente(String email, String endereco, String nome, String telefone) {
+        this.dataCadastro = LocalDate.now();
         this.email = email;
         this.endereco = endereco;
-        this.id = id;
         this.nome = nome;
         this.telefone = telefone;
     }
 
-    public String getDataCadastro() {
+    public LocalDate getDataCadastro() {
         return dataCadastro;
     }
 
@@ -35,10 +35,6 @@ public class Cliente {
 
     public void setEndereco(String endereco) {
         this.endereco = endereco;
-    }
-
-    public Long getId() {
-        return id;
     }
 
     public String getNome() {
