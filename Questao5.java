@@ -4,6 +4,9 @@ public class Questao5 {
 
         String[] cores = {"vermelho", "azul", "verde"};
 
+        for(String cor : cores){
+            System.out.println(cor);
+        }
     }
 
 }
